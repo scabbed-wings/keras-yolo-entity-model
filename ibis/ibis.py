@@ -14,7 +14,7 @@ class Box:
         
 
 def intersection_box(box1_pos, box2_pos): #Intersection between boxes
-    if(box1_pos[0] <= box2_pos and box2_pos[0] <= box1_pos[8]):
+    if(box1_pos[0] <= box2_pos[0] and box2_pos[0] <= box1_pos[8]):
         if((box1_pos[1] <= box2_pos[1] and box2_pos[1] <= box1_pos[9]) or (box1_pos[1] >= box2_pos[1] and box1_pos[1] <= box2_pos[9])):
             return True
     elif(box2_pos[0] <= box1_pos and box1_pos[0] <= box2_pos[8]):
@@ -83,7 +83,7 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
     
     for elem in non_connections:
         if out_classes[elem] == 0: #Attributees detection
-            if not relations.used_attribute(obt_relations, elem):
+            if not ibis.relations.used_attribute(obt_relations, elem):
                 box2 = out_boxes[elem]
                 box2_pos = box2[1], box2[0], box2[1] + im_dim[0]/2, box2[0], box2[3], box2[0], box2[3], box2[0] + im_dim[1]/2,
                 box2[3], box2[2], box2[1] + im_dim[0]/2, box2[2], box2[1], box2[2], box2[1], box2[0] + im_dim[1]/2 #Corner and middle points from the boxes
