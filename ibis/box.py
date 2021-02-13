@@ -7,7 +7,6 @@ class Box:
     def __getattribute__(self, name):
         return super().__getattribute__(name)
 
-
 def intersection_box(box1_pos, box2_pos): #Intersection between boxes
     if(box1_pos[0] <= box2_pos[0] and box2_pos[0] <= box1_pos[8]):
         if((box1_pos[1] <= box2_pos[1] and box2_pos[1] <= box1_pos[9]) or (box1_pos[1] >= box2_pos[1] and box1_pos[1] <= box2_pos[9])):
@@ -17,7 +16,6 @@ def intersection_box(box1_pos, box2_pos): #Intersection between boxes
             return True
     
     return False
-
 
 def box_min_distance(box1_pos, box2_pos): #Minimum distance between the points of the boxes
     result = -1
@@ -38,8 +36,6 @@ def box_min_distance(box1_pos, box2_pos): #Minimum distance between the points o
         i += 2
     
     return result
-
-
 
 def init_locations(box):
     width = box[3] - box[1]

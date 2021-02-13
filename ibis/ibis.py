@@ -48,7 +48,7 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
                 box2 = out_boxes[elem]
                 box2_pos = ibis.box.init_locations(box2) #Corner and middle points from the boxes
 
-                print("Box1: ", box1_pos, " Box2: ", box2_pos)
+                #print("Box1: ", box1_pos, " Box2: ", box2_pos)
 
                 if ibis.box.intersection_box(box1_pos, box2_pos) and len(possible_inter) < 5: #Intersection between boxes
                     possible_inter.append(elem)
@@ -80,7 +80,11 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
     
     possible_dist = sort_dist_array(possible_dist)
 
-    print("Possible Distances: ", possible_dist)
+    print("Possible inter", possible_inter)
+
+    
+    for i in possible_dist:
+        print("Possible Distances: ", i.dist, end=' ')
 
 
 
