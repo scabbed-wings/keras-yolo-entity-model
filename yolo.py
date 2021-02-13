@@ -17,7 +17,7 @@ from yolo3.model import yolo_eval, yolo_body, tiny_yolo_body
 from yolo3.utils import letterbox_image
 import os
 from keras.utils import multi_gpu_model
-import ibis
+import ibis.ibis
 
 class YOLO(object):
     _defaults = {
