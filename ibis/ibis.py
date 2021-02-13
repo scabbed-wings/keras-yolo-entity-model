@@ -56,7 +56,7 @@ def min_dist_array(possible_dist, bbox):
             max_dist = elem.dist
     
     if bbox.dist < max_dist:
-        possible_dist[max_dist] = bbox
+        possible_dist[max_ind] = bbox
     
     return possible_dist
 
