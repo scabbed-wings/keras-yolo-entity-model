@@ -17,7 +17,7 @@ def intersection_box(box1_pos, box2_pos): #Intersection between boxes
     if(box1_pos[0] <= box2_pos[0] and box2_pos[0] <= box1_pos[8]):
         if((box1_pos[1] <= box2_pos[1] and box2_pos[1] <= box1_pos[9]) or (box1_pos[1] >= box2_pos[1] and box1_pos[1] <= box2_pos[9])):
             return True
-    elif(box2_pos[0] <= box1_pos and box1_pos[0] <= box2_pos[8]):
+    elif(box2_pos[0] <= box1_pos[0] and box1_pos[0] <= box2_pos[8]):
         if((box2_pos[1] <= box1_pos[1] and box1_pos[1] <= box2_pos[9]) or (box2_pos[1] >= box1_pos[1] and box2_pos[1] <= box1_pos[9])):
             return True
     
