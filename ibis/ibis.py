@@ -74,8 +74,8 @@ def sort_dist_array(possible_dist):
 
 
 def create_relations(out_boxes, out_classes, out_scores, non_connections, box, obt_relations, im_dim):
-    box1_pos = box[1], box[0], box[1] + im_dim[0]/2, box[0], box[3], box[0], box[3], box[0] + im_dim[1]/2,
-    box[3], box[2], box[1] + im_dim[0]/2, box[2], box[1], box[2], box[1], box[0] + im_dim[1]/2
+    box1_pos = [box[1], box[0], box[1] + im_dim[0]/2, box[0], box[3], box[0], box[3], box[0] + im_dim[1]/2,
+    box[3], box[2], box[1] + im_dim[0]/2, box[2], box[1], box[2], box[1], box[0] + im_dim[1]/2]
 
     possible_inter = []
     possible_dist = []
@@ -85,8 +85,10 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
         if out_classes[elem] == 0: #Attributees detection
             if not ibis.relations.used_attribute(obt_relations, elem):
                 box2 = out_boxes[elem]
-                box2_pos = box2[1], box2[0], box2[1] + im_dim[0]/2, box2[0], box2[3], box2[0], box2[3], box2[0] + im_dim[1]/2,
-                box2[3], box2[2], box2[1] + im_dim[0]/2, box2[2], box2[1], box2[2], box2[1], box2[0] + im_dim[1]/2 #Corner and middle points from the boxes
+                box2_pos = [ box2[1], box2[0], box2[1] + im_dim[0]/2, box2[0], box2[3], box2[0], box2[3], box2[0] + im_dim[1]/2,
+                box2[3], box2[2], box2[1] + im_dim[0]/2, box2[2], box2[1], box2[2], box2[1], box2[0] + im_dim[1]/2] #Corner and middle points from the boxes
+
+                print("Box1: ", box1_pos, " Box2: ", box2_pos)
 
                 if intersection_box(box1_pos, box2_pos) and len(possible_inter) < 5: #Intersection between boxes
                     possible_inter.append(elem)
@@ -102,8 +104,8 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
         else:
             
             box2 = out_boxes[elem]
-            box2_pos = box2[1], box2[0], box2[1] + im_dim[0]/2, box2[0], box2[3], box2[0], box2[3], box2[0] + im_dim[1]/2,
-            box2[3], box2[2], box2[1] + im_dim[0]/2, box2[2], box2[1], box2[2], box2[1], box2[0] + im_dim[1]/2 #Corner and middle points from the boxes
+            box2_pos = [box2[1], box2[0], box2[1] + im_dim[0]/2, box2[0], box2[3], box2[0], box2[3], box2[0] + im_dim[1]/2,
+            box2[3], box2[2], box2[1] + im_dim[0]/2, box2[2], box2[1], box2[2], box2[1], box2[0] + im_dim[1]/2] #Corner and middle points from the boxes
 
             if intersection_box(box1_pos, box2_pos) and len(possible_inter) < 5: #Intersection between boxes
                 possible_inter.append(elem)
