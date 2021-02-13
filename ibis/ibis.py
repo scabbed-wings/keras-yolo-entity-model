@@ -96,7 +96,7 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
                     if len(possible_dist) < 5:
                         dist = box_min_distance(box1_pos, box2_pos)
                         box_aux = Box(0, elem, dist)
-                        possible_dist.append/box_aux
+                        possible_dist.append(box_aux)
                     else:
                         dist = box_min_distance(box1_pos, box2_pos)
                         box_aux = Box(0, elem, dist)
@@ -113,7 +113,7 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
                 if len(possible_dist) < 5:
                     dist = box_min_distance(box1_pos, box2_pos)
                     box_aux = Box(0, elem, dist)
-                    possible_dist.append/box_aux
+                    possible_dist.append(box_aux)
                 else:
                     dist = box_min_distance(box1_pos, box2_pos)
                     box_aux = Box(0, elem, dist)
@@ -121,7 +121,7 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
     
     possible_dist = sort_dist_array(possible_dist)
 
-    print("Possible Distances")
+    print("Possible Distances: ", possible_dist)
 
 
 
