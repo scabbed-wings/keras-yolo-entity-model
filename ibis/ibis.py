@@ -1,7 +1,7 @@
 import numpy as np
 from PIL import Image
 import os
-import relations
+import ibis.relations
 
 class Box:
     def __init__(self, ind_class, id_box, dist):
