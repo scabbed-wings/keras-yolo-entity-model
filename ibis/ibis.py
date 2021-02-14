@@ -94,6 +94,7 @@ def create_relations(out_boxes, out_classes, non_connections, box, obt_relations
         for elem in possible_dist:
             if(out_classes[inter_ind] != elem.ind_class) and (not intr_sol) and len(obt_relations) < len(non_connections):
                 relation = ibis.relations.relation(inter_ind, elem.id_box, ind_box, elem.dist)
+                obt_relations.append(relation)
                 intr_sol = True
     else:
         for i, ind in enumerate(possible_dist):
@@ -101,6 +102,8 @@ def create_relations(out_boxes, out_classes, non_connections, box, obt_relations
             while j < len(possible_dist) and not intr_sol:
                 if(ind.ind_class != possible_dist[j].ind_class) and (not intr_sol) and (len(obt_relations) < len(non_connections)):
                     relation = ibis.relations.relation(ind.id_box, possible_dist[j].id_box, ind_box, ind.dist)
+                    obt_relations.append(relation)
+                    intr_sol = True
     
     return obt_relations
 
@@ -114,7 +117,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
 
                 if(find == False):
                     possible_dist = []
-                    
+
 
 
 
