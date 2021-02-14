@@ -171,6 +171,9 @@ class YOLO(object):
                 fill=self.colors[c])
             draw.text(text_origin, label, fill=(0, 0, 0), font=font)
             del draw
+        
+        for elem in obt_relations:
+            print("Connection: ", elem.ind_box, " Input: ", elem.ind_inp, " Output: ", elem.ind_out, " Dist: ", elem.dist)
 
         end = timer()
         print(end - start)
