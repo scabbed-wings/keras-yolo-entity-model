@@ -86,13 +86,16 @@ def create_relations(out_boxes, out_classes, non_connections, box, obt_relations
             j = i+1
             while(j < len(possible_inter) and not intr_sol):
                 if (out_classes[ind] != out_classes[possible_inter[j]]) and (not intr_sol) and len(obt_relations) < len(non_connections):
+                    print("First element: ", ind, " Second element: ", possible_inter[j], "Class first: ", out_classes[ind], "Class second: ", out_classes[possible_inter[j]])
                     relation = ibis.relations.relation(ind, possible_inter[j], ind_box, -1)
                     obt_relations.append(relation)
                     intr_sol = True
+                j += 1
     elif len(possible_inter) == 1: #If there is only one box intersecting we look for the nearest compatible box available
         inter_ind = possible_inter[0]
         for elem in possible_dist:
             if(out_classes[inter_ind] != elem.ind_class) and (not intr_sol) and len(obt_relations) < len(non_connections):
+                print("First element: ", inter_ind, " Second element: ", elem.id_box, "Class first: ", out_classes[inter_ind], "Class second: ", elem.ind_class)
                 relation = ibis.relations.relation(inter_ind, elem.id_box, ind_box, elem.dist)
                 obt_relations.append(relation)
                 intr_sol = True
@@ -101,9 +104,11 @@ def create_relations(out_boxes, out_classes, non_connections, box, obt_relations
             j = i+1
             while j < len(possible_dist) and not intr_sol:
                 if(ind.ind_class != possible_dist[j].ind_class) and (not intr_sol) and (len(obt_relations) < len(non_connections)):
+                    print("First element: ", ind.id_box, " Second element: ", possible_dist[j].id_box, "Class first: ", ind.id_ind_class, "Class second: ", possible_dist[j].ind_class)
                     relation = ibis.relations.relation(ind.id_box, possible_dist[j].id_box, ind_box, ind.dist)
                     obt_relations.append(relation)
                     intr_sol = True
+                j += 1
     
     return obt_relations
 
