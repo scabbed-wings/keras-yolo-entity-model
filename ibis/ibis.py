@@ -104,7 +104,7 @@ def create_relations(out_boxes, out_classes, non_connections, box, obt_relations
             j = i+1
             while j < len(possible_dist) and not intr_sol:
                 if(ind.ind_class != possible_dist[j].ind_class) and (not intr_sol) and (len(obt_relations) < len(non_connections)):
-                    print("First element: ", ind.id_box, " Second element: ", possible_dist[j].id_box, "Class first: ", ind.id_ind_class, "Class second: ", possible_dist[j].ind_class)
+                    print("First element: ", ind.id_box, " Second element: ", possible_dist[j].id_box, "Class first: ", ind.ind_class, "Class second: ", possible_dist[j].ind_class)
                     relation = ibis.relations.relation(ind.id_box, possible_dist[j].id_box, ind_box, ind.dist)
                     obt_relations.append(relation)
                     intr_sol = True
