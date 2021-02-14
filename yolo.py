@@ -148,7 +148,7 @@ class YOLO(object):
             top, left, bottom, right = box #x
 
             if c == 3:
-                obt_relations = ibis.ibis.create_relations(out_boxes, out_scores, non_connections, box, obt_relations, im_dim, i)
+                obt_relations = ibis.ibis.create_relations(out_boxes, out_classes, non_connections, box, obt_relations, im_dim, i)
 
             top = max(0, np.floor(top + 0.5).astype('int32'))
             left = max(0, np.floor(left + 0.5).astype('int32'))
