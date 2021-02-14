@@ -35,7 +35,7 @@ def sort_dist_array(possible_dist):
     return possible_dist
 
 
-def create_relations(out_boxes, out_classes, out_scores, non_connections, box, obt_relations, im_dim):
+def create_relations(out_boxes, out_classes, non_connections, box, obt_relations, im_dim, ind_box):
     box1_pos = ibis.box.init_locations(box)
 
     possible_inter = []
@@ -71,20 +71,53 @@ def create_relations(out_boxes, out_classes, out_scores, non_connections, box, o
             else :
                 if len(possible_dist) < 5:
                     dist = ibis.box.box_min_distance(box1_pos, box2_pos)
-                    box_aux = ibis.box.Box(0, elem, dist)
+                    box_aux = ibis.box.Box(out_classes[elem], elem, dist)
                     possible_dist.append(box_aux)
                 else:
                     dist = ibis.box.box_min_distance(box1_pos, box2_pos)
-                    box_aux = ibis.box.Box(0, elem, dist)
+                    box_aux = ibis.box.Box(out_classes[elem], elem, dist)
                     possible_dist = min_dist_array(possible_dist, box_aux)
     
     possible_dist = sort_dist_array(possible_dist)
+    intr_sol = False
 
-    print("Possible inter", possible_inter)
-
+    if len(possible_inter) >= 2: #If there is two intersections with the conection box we add them to the solution
+        for i, ind in enumerate(possible_inter):
+            j = i+1
+            while(j < len(possible_inter) and not intr_sol):
+                if (out_classes[ind] != out_classes[possible_inter[j]]) and (not intr_sol) and len(obt_relations) < len(non_connections):
+                    relation = ibis.relations.relation(ind, possible_inter[j], ind_box, -1)
+                    obt_relations.append(relation)
+                    intr_sol = True
+    elif len(possible_inter) == 1: #If there is only one box intersecting we look for the nearest compatible box available
+        inter_ind = possible_inter[0]
+        for elem in possible_dist:
+            if(out_classes[inter_ind] != elem.ind_class) and (not intr_sol) and len(obt_relations) < len(non_connections):
+                relation = ibis.relations.relation(inter_ind, elem.id_box, ind_box, elem.dist)
+                intr_sol = True
+    else:
+        for i, ind in enumerate(possible_dist):
+            j = i+1
+            while j < len(possible_dist) and not intr_sol:
+                if(ind.ind_class != possible_dist[j].ind_class) and (not intr_sol) and (len(obt_relations) < len(non_connections)):
+                    relation = ibis.relations.relation(ind.id_box, possible_dist[j].id_box, ind_box, ind.dist)
     
-    for i in possible_dist:
-        print("Possible Distances: ", i.dist, end=' ')
+    return obt_relations
+
+def search_missing(obt_relations, out_boxes, out_classes, non_connections):
+
+    for i, elem in enumerate(non_connections):
+        if out_classes[elem] == 1 or out_classes[elem] == 2:
+            find = ibis.relations.condition_satisfied(obt_relations, elem, out_classes[elem], out_classes)
+
+            while(not find):
+
+                if(find == False):
+                    possible_dist = []
+                    
+
+
+
 
 
 
