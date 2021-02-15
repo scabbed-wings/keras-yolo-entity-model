@@ -155,7 +155,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
             
                     possible_dist = sort_dist_array(possible_dist)
                     print("Len possible_dist: ", len(possible_dist))
-                    new_relation = ibis.relations.Relation(elem, possible_dist[0].id_box, possible_dist[0].dist)
+                    new_relation = ibis.relations.Relation(elem, possible_dist[0].id_box, elem, possible_dist[0].dist)
                     obt_relations = ibis.relations.add_solution(obt_relations, new_relation, len(non_connections))
         
                 elif find == -1:
@@ -184,7 +184,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                             possible_dist = min_dist_array(possible_dist, box_aux)
                 
                 possible_dist = sort_dist_array(possible_dist)
-                new_relation = ibis.relations.Relation(elem, possible_dist[0].id_box, possible_dist[0].dist)
+                new_relation = ibis.relations.Relation(elem, possible_dist[0].id_box, elem, possible_dist[0].dist)
                 obt_relations = ibis.relations.add_solution(obt_relations, new_relation, len(non_connections))
 
                 find = ibis.relations.used_attribute(obt_relations, elem)
