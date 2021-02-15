@@ -39,13 +39,15 @@ def condition_satisfied(obt_relations, id_box, ind_class, out_classes): #Search 
 def add_solution(obt_relations, new_relation, cont_elem):
     change_sol = False
     for i, elem in enumerate(obt_relations):
-        j = i+1
+        j = i=0
         while(j < len(obt_relations)):
-            if(elem.ind_box != obt_relations[j].ind_box) and ((elem.ind_inp == obt_relations[j].ind_inp and elem.ind_out == obt_relations[j].ind_out) or (elem.ind_inp == obt_relations[j].ind_out and elem.ind_out == obt_relations[j].ind_inp)):
+            if(elem.ind_box != obt_relations[j].ind_box) and ((elem.ind_inp == obt_relations[j].ind_inp and elem.ind_out == obt_relations[j].ind_out) 
+             or (elem.ind_inp == obt_relations[j].ind_out and elem.ind_out == obt_relations[j].ind_inp)):
                 if(new_relation.dist < obt_relations[j].dist and not change_sol):
                     obt_relations.pop(j)
                     obt_relations.append(new_relation)
                     change_sol = True
+            j += 1
     
     if(not change_sol and len(obt_relations) < cont_elem):
         obt_relations.append(new_relation)
