@@ -149,6 +149,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                                     dist = ibis.box.box_min_distance(box1_pos, box2_pos)
                                     box_aux = ibis.box.Box(1, elem2, dist)
                                     possible_dist = min_dist_array(possible_dist, box_aux)
+                        j += 1
             
                     possible_dist = sort_dist_array(possible_dist)
                     new_relation = ibis.relations.Relation(elem, possible_dist[0].id_box, possible_dist[0].dist)
