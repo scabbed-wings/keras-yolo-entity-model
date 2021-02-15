@@ -117,6 +117,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
     for i, elem in enumerate(non_connections):
         if out_classes[elem] == 1 or out_classes[elem] == 2:
             find = ibis.relations.condition_satisfied(obt_relations, elem, out_classes[elem], out_classes)
+            print("First find Case 1: ", find)
 
             while(not find): #Loop to fulfill the condition of entities and relations
 
@@ -156,9 +157,11 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                     obt_relations = ibis.relations.delete_max_relation(obt_relations, elem)
         
                 find = ibis.relations.condition_satisfied(obt_relations, elem, out_classes[elem], out_classes)
+                print("Second find Case 1: ", find)
         
         elif out_classes[elem] == 0:
             find = ibis.relations.used_attribute(obt_relations, elem)
+            print("First find Case 2: ", find)
 
             while not find: # Loop to fulfill the conditions of the attributes
                 possible_dist = []
@@ -182,5 +185,6 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                 obt_relations = ibis.relations.add_solution(obt_relations, new_relation, len(non_connections))
 
                 find = ibis.relations.used_attribute(obt_relations, elem)
+                print("Second find Case 2: ", find)
     
     return obt_relations
