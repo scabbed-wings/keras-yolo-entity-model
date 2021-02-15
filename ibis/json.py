@@ -107,7 +107,7 @@ def create_json(obt_relations, non_connections, out_boxes, out_classes):
         top, left, bottom, right = out_boxes[elem]
         x,y= left + (right -left)/2, top + (bottom - top)/2
         file_object.write("\t\t\t\"name\":  \"TernaryRelation"+ str(elem)+ "\",\n")
-        file_object.write("\t\t\t\"id\":  \"" + str(elem) +"\"\n")
+        file_object.write("\t\t\t\"id\":  \"" + str(elem) +"\",\n")
         file_object.write("\t\t\t\"x\":  \"" + str(x) +"\",\n")
         file_object.write("\t\t\t\"y\":  \"" + str(y) +"\",\n")
         for elem in obt_relations:
@@ -131,7 +131,7 @@ def create_json(obt_relations, non_connections, out_boxes, out_classes):
                 count += 1
         file_object.write("\t\t\t\"cardFirst\": \"1\",\n")
         file_object.write("\t\t\t\"cardSecond\": \"N\",\n")
-        file_object.write("\t\t\t\"cardThird\": \"M\",\n")
+        file_object.write("\t\t\t\"cardThird\": \"M\"\n")
         
         if (i+1) < len(ternaries):
              file_object.write("\t\t},\n")
