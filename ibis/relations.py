@@ -41,9 +41,7 @@ def add_solution(obt_relations, new_relation, cont_elem):
     for i, elem in enumerate(obt_relations):
         j = i+1
         while(j < len(obt_relations)):
-            if(elem.ind_box != obt_relations[j].ind_box) and ((elem.ind_inp == obt_relations[j].ind_inp and elem.ind_out == obt_relations[j].ind_out) or 
-                (elem.ind_inp == obt_relations[j].ind_out and elem.ind_out == obt_relations[j].ind_inp)):
-                
+            if(elem.ind_box != obt_relations[j].ind_box) and ((elem.ind_inp == obt_relations[j].ind_inp and elem.ind_out == obt_relations[j].ind_out) or (elem.ind_inp == obt_relations[j].ind_out and elem.ind_out == obt_relations[j].ind_inp)):
                 if(new_relation.dist < obt_relations[j].dist and not change_sol):
                     obt_relations.pop(j)
                     obt_relations.append(new_relation)
