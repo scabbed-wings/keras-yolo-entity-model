@@ -18,6 +18,7 @@ from yolo3.utils import letterbox_image
 import os
 from keras.utils import multi_gpu_model
 import ibis.ibis
+import ibis.json
 
 class YOLO(object):
     _defaults = {
@@ -177,6 +178,8 @@ class YOLO(object):
         
         for elem in obt_relations:
             print("Connection: ", elem.ind_box, " Input: ", elem.ind_inp, " Output: ", elem.ind_out, " Dist: ", elem.dist)
+        
+        ibis.json.create_json(obt_relations, non_connections, out_boxes, out_classes)
 
         end = timer()
         print(end - start)
