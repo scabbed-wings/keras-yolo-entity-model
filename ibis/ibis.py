@@ -119,7 +119,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
             find = ibis.relations.condition_satisfied(obt_relations, elem, out_classes[elem], out_classes)
             print("First find Case 1: ", find)
 
-            while(not find): #Loop to fulfill the condition of entities and relations
+            while(not find or find == -1): #Loop to fulfill the condition of entities and relations
 
                 if(find == False):
                     possible_dist = []
@@ -138,16 +138,17 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                                     dist = ibis.box.box_min_distance(box1_pos, box2_pos)
                                     box_aux = ibis.box.Box(2, elem2, dist)
                                     possible_dist = min_dist_array(possible_dist, box_aux)
-                        elif out_classes[elem2] == 1:
-                            box2_pos = ibis.box.init_locations(out_boxes[elem2])
-                            if len(possible_dist) < 5:
-                                dist = ibis.box.box_min_distance(box1_pos, box2_pos)
-                                box_aux = ibis.box.Box(1, elem2, dist)
-                                possible_dist.append(box_aux)
-                            else:
-                                dist = ibis.box.box_min_distance(box1_pos, box2_pos)
-                                box_aux = ibis.box.Box(1, elem2, dist)
-                                possible_dist = min_dist_array(possible_dist, box_aux)
+                        else:
+                            if out_classes[elem2] == 1:
+                                box2_pos = ibis.box.init_locations(out_boxes[elem2])
+                                if len(possible_dist) < 5:
+                                    dist = ibis.box.box_min_distance(box1_pos, box2_pos)
+                                    box_aux = ibis.box.Box(1, elem2, dist)
+                                    possible_dist.append(box_aux)
+                                else:
+                                    dist = ibis.box.box_min_distance(box1_pos, box2_pos)
+                                    box_aux = ibis.box.Box(1, elem2, dist)
+                                    possible_dist = min_dist_array(possible_dist, box_aux)
             
                     possible_dist = sort_dist_array(possible_dist)
                     new_relation = ibis.relations.Relation(elem, possible_dist[0].id_box, possible_dist[0].dist)
