@@ -158,7 +158,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                 find = ibis.relations.condition_satisfied(obt_relations, elem, out_classes[elem], out_classes)
         
         elif out_classes[elem] == 0:
-            find = ibis.relations.condition_satisfied(obt_relations, elem, out_classes[elem], out_classes)
+            find = ibis.relations.used_attribute(obt_relations, elem)
 
             while not find: # Loop to fulfill the conditions of the attributes
                 possible_dist = []
