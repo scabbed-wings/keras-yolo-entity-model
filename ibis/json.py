@@ -44,18 +44,18 @@ def create_json(obt_relations, non_connections, out_boxes, out_classes):
                 for elem2 in obt_relations:
                     if elem2.ind_inp == elem and contr:
                         if out_classes[elem2.ind_out] == 1:
-                            file_object.write("\t\t\t\"enter\":  \"" + str(elem2.ind_out))
+                            file_object.write("\t\t\t\"enter\":  \"" + str(elem2.ind_out)+"\",\n")
                             contr = False
                     elif elem2.ind_out == elem and contr:
                         if out_classes[elem2.ind_inp] == 1:
-                            file_object.write("\t\t\t\"enter\":  \"" + str(elem2.ind_inp))
+                            file_object.write("\t\t\t\"enter\":  \"" + str(elem2.ind_inp)+"\",\n")
                             contr = False
                     elif elem2.ind_inp == elem:
                         if out_classes[elem2.ind_out] == 1:
-                            file_object.write("\t\t\t\"exit\":  \"" + str(elem2.ind_out))
+                            file_object.write("\t\t\t\"exit\":  \"" + str(elem2.ind_out)+"\",\n")
                     elif elem2.ind_out == elem:
                         if out_classes[elem2.ind_inp] == 1:
-                            file_object.write("\t\t\t\"exit\":  \"" + str(elem2.ind_inp))
+                            file_object.write("\t\t\t\"exit\":  \"" + str(elem2.ind_inp)+"\",\n")
                 
                 file_object.write("\t\t\t\"id\":  \"" + str(elem) +"\",\n")
                 file_object.write("\t\t\t\"x\":  \"" + str(x) +"\",\n")

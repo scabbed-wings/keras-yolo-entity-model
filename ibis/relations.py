@@ -76,7 +76,7 @@ def delete_max_relation(obt_relations, id_relation):
 
 def there_is_more(position, ind_class, non_connections, out_classes):
     find = False
-    i = position
+    i = position + 1
     while(i < len(non_connections) and  not find):
         if out_classes[i] == ind_class:
             find = True
