@@ -138,6 +138,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                                     dist = ibis.box.box_min_distance(box1_pos, box2_pos)
                                     box_aux = ibis.box.Box(2, elem2, dist)
                                     possible_dist = min_dist_array(possible_dist, box_aux)
+                                print("Enter 1 possible_dist: ", len(possible_dist))
                         else:
                             if out_classes[elem2] == 1:
                                 box2_pos = ibis.box.init_locations(out_boxes[elem2])
@@ -149,6 +150,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                                     dist = ibis.box.box_min_distance(box1_pos, box2_pos)
                                     box_aux = ibis.box.Box(1, elem2, dist)
                                     possible_dist = min_dist_array(possible_dist, box_aux)
+                                print("Enter 2 possible_dist: ", len(possible_dist))
                         j += 1
             
                     possible_dist = sort_dist_array(possible_dist)
@@ -160,11 +162,9 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                     obt_relations = ibis.relations.delete_max_relation(obt_relations, elem)
         
                 find = ibis.relations.condition_satisfied(obt_relations, elem, out_classes[elem], out_classes)
-                print("Second find Case 1: ", find)
         
         elif out_classes[elem] == 0:
             find = ibis.relations.used_attribute(obt_relations, elem)
-            print("First find Case 2: ", find)
 
             while not find: # Loop to fulfill the conditions of the attributes
                 possible_dist = []
@@ -188,6 +188,5 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                 obt_relations = ibis.relations.add_solution(obt_relations, new_relation, len(non_connections))
 
                 find = ibis.relations.used_attribute(obt_relations, elem)
-                print("Second find Case 2: ", find)
     
     return obt_relations
