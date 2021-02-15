@@ -88,7 +88,7 @@ def is_ternary(id_box, obt_relations):
     count = 0
     find = False
     for elem in obt_relations:
-        if elem.ind.inp == id_box or elem.ind_out == id_box:
+        if elem.ind_inp == id_box or elem.ind_out == id_box:
             count += 1
     
     if count == 3:
