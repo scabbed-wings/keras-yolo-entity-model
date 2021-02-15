@@ -46,14 +46,14 @@ def add_solution(obt_relations, new_relation, cont_elem):
             if(elem.ind_box != obt_relations[j].ind_box) and ((elem.ind_inp == obt_relations[j].ind_inp and elem.ind_out == obt_relations[j].ind_out) 
              or (elem.ind_inp == obt_relations[j].ind_out and elem.ind_out == obt_relations[j].ind_inp)):
                 if(new_relation.dist < obt_relations[j].dist and not change_sol):
-                    print("Adding new solution: ", new_relation.ind_box)
+                    #print("Adding new solution: ", new_relation.ind_box)
                     obt_relations.pop(j)
                     obt_relations.append(new_relation)
                     change_sol = True
             j += 1
     
     if(not change_sol and len(obt_relations) < cont_elem):
-        print("Adding new_solution 2: ", new_relation.ind_box)
+        #print("Adding new_solution 2: ", new_relation.ind_box)
         obt_relations.append(new_relation)
     
     return obt_relations
@@ -73,3 +73,25 @@ def delete_max_relation(obt_relations, id_relation):
     obt_relations.pop(ind)
 
     return obt_relations
+
+def there_is_more(position, ind_class, non_connections, out_classes):
+    find = False
+    i = position
+    while(i < len(non_connections) and  not find):
+        if out_classes[i] == ind_class:
+            find = True
+        i += 1
+    
+    return find
+
+def is_ternary(id_box, obt_relations):
+    count = 0
+    find = False
+    for elem in obt_relations:
+        if elem.ind.inp == id_box or elem.ind_out == id_box:
+            count += 1
+    
+    if count == 3:
+        find = True
+    
+    return find
