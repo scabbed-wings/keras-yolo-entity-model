@@ -124,7 +124,7 @@ def search_missing(obt_relations, out_boxes, out_classes, non_connections):
                 if(find == False):
                     possible_dist = []
                     box1_pos = ibis.box.init_locations(out_boxes[elem])
-                    j = i+1
+                    j = 0
                     while(j < len(non_connections)):
                         elem2 = non_connections[j]
                         if out_classes[elem] == 1:
