@@ -30,7 +30,7 @@ def create_json(obt_relations, non_connections, out_boxes, out_classes):
 
     #Writing relations
     file_object.write("\t\"Relations\":  [\n")
-    for elem in non_connections:
+    for i, elem in enumerate(non_connections):
         if out_classes[elem] == 2:
             if ibis.relations.is_ternary(elem, obt_relations):
                 ternaries.append(elem)
@@ -73,7 +73,7 @@ def create_json(obt_relations, non_connections, out_boxes, out_classes):
     #Writing attributes
 
     file_object.write("\t\"Attributes\":  [\n")
-    for elem in non_connections:
+    for i, elem in enumerate(non_connections):
         if out_classes[elem] == 0:
             file_object.write("\t\t{\n")
             top, left, bottom, right = out_boxes[elem]

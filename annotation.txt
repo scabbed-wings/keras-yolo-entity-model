@@ -1,0 +1,99 @@
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model100.jpg 20,157,561,360,0 1,44,929,298,0 78,296,558,593,0 121,543,966,606,0 725,257,965,596,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model101.jpg 20,54,215,99,0 120,55,212,169,0 137,54,293,168,0 6,6,97,97,1 128,5,282,98,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model102.jpg 72,212,718,412,0 134,18,645,408,2
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model103.jpg 1,0,255,105,1 76,71,173,288,0 3,149,159,219,2 1,252,254,350,1 80,167,349,302,0 178,89,431,201,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model104.jpg 15,119,136,386,1 368,121,484,387,1 21,178,481,321,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model105.jpg 3,76,140,186,1 190,30,305,144,2 334,0,473,137,1 21,36,441,186,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model106.jpg 0,0,440,149,0 160,6,310,178,2
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model107.jpg 1,89,254,200,1 78,168,353,301,0 253,72,350,287,0 175,252,429,348,1 270,149,426,223,2 176,1,429,105,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model108.jpg 9,9,413,237,0 9,155,420,375,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model109.jpg 43,42,304,199,1 168,100,667,190,0 346,15,482,188,2 524,16,663,173,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model110.jpg 7,7,413,259,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model111.jpg 1,115,348,281,0 216,119,643,196,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model112.jpg 0,1,241,151,1 24,1,576,138,0 358,63,579,192,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model113.jpg 0,65,461,178,0 161,2,302,176,2
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model114.jpg 8,65,235,192,1 348,1,593,154,1 12,0,576,135,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model115.jpg 9,9,416,261,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model116.jpg 2,37,96,100,1 275,0,387,63,1 100,107,222,180,1 219,87,371,189,2 18,13,349,72,0 149,38,395,150,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model117.jpg 72,194,361,384,1 508,329,785,449,1 603,138,806,236,1 175,259,693,397,0 589,179,732,406,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model118.jpg 1005,1,3165,740,1 1265,600,4488,2233,2 3565,257,6016,1946,1 1050,0,5085,1972,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model119.jpg 10,0,112,59,1 283,40,400,101,1 85,96,216,163,1 200,118,358,197,2 37,0,357,100,0 142,63,383,181,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model120.jpg 7,95,263,366,1 740,75,1019,358,1 264,25,575,263,2 93,114,880,266,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model121.jpg 3,91,496,213,0 333,93,827,211,0 1,6,163,284,1 325,4,494,280,1 654,5,828,284,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model122.jpg 112,0,250,240,0 6,133,280,239,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model123.jpg 6,7,412,256,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model124.jpg 28,91,297,199,1 41,326,311,525,1 551,363,803,466,1 548,51,798,245,1 296,14,547,195,2 190,96,656,229,0 166,112,307,505,0 188,358,660,483,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model125.jpg 0,33,223,159,1 344,35,591,192,1 18,5,582,94,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model126.jpg 49,40,267,100,1 401,41,615,100,1 290,230,593,364,1 280,143,617,203,2 168,38,499,102,0 399,40,496,293,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model127.jpg 994,1365,3067,2233,1 3470,493,6017,2011,1 1289,4,4636,1616,2 1001,513,5128,2065,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model128.jpg 10,148,274,260,1 495,149,759,258,1 485,383,749,495,1 58,179,721,291,0 59,212,725,460,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model129.jpg 2,6,163,285,1 330,6,497,283,1 661,5,812,280,1 2,91,495,213,0 334,92,827,205,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model130.jpg 2,148,157,418,1 350,88,500,361,1 16,178,482,322,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model131.jpg 18,272,559,470,0 82,35,562,332,0 124,24,967,97,0 728,31,965,379,0 18,330,927,584,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model132.jpg 1,2,251,125,1 278,1,528,131,1 60,61,524,145,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model133.jpg 16,110,130,379,1 367,111,486,379,1 22,177,478,322,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model134.jpg 0,143,280,238,1 115,0,252,241,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model135.jpg 28,72,280,165,1 532,21,788,207,1 528,346,794,445,1 27,291,277,476,1 282,321,524,518,2 172,318,635,440,0 526,99,662,421,0 172,52,640,174,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model136.jpg 0,32,221,161,1 339,1,588,162,1 8,103,582,192,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model137.jpg 2,38,227,170,1 342,23,593,189,1 15,1,581,87,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model138.jpg 12,0,426,258,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model139.jpg 11,4,169,281,1 341,3,502,281,1 670,5,833,280,1 9,91,502,205,0 341,92,832,206,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model140.jpg 7,2,255,60,0 10,13,102,182,0 19,1,257,181,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model141.jpg 8,94,264,362,1 749,77,1017,354,1 268,26,573,262,2 102,119,864,264,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model142.jpg 9,36,122,132,1 338,41,465,178,1 186,46,318,144,2 20,81,440,141,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model143.jpg 12,1,188,187,1 334,8,508,283,1 649,103,825,292,1 15,1,508,224,0 332,80,826,292,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model144.jpg 10,9,266,125,1 275,9,504,126,1 82,54,442,162,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model145.jpg 1,0,253,105,1 2,253,255,350,1 180,90,431,199,1 4,151,160,214,2 77,76,173,286,0 79,169,349,301,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model146.jpg 39,212,316,322,1 68,415,270,498,1 488,205,774,344,1 116,252,237,449,0 138,250,662,287,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model147.jpg 57,165,293,335,1 431,22,687,337,1 131,147,622,223,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model148.jpg 0,20,253,336,1 393,164,631,333,1 66,146,552,226,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model149.jpg 5,0,442,174,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model150.jpg 12,10,446,168,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model151.jpg 16,8,168,96,1 198,6,288,96,1 84,56,275,98,0 83,53,174,168,0 6,55,158,167,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model152.jpg 2,1,83,137,0 19,92,260,152,0 199,107,301,165,0 192,10,267,135,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model153.jpg 4,1,249,159,1 371,36,594,157,1 16,105,570,163,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model154.jpg 0,69,232,265,1 445,1,685,64,1 552,210,771,378,1 78,360,400,448,1 90,1,586,191,0 88,108,324,448,0 179,228,710,446,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model155.jpg 14,5,210,175,0 14,105,236,178,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model156.jpg 6,12,412,229,0 15,137,413,383,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model157.jpg 40,194,320,310,1 485,205,776,352,1 62,404,268,490,1 114,238,240,443,0 137,240,665,299,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model158.jpg 6,30,259,146,1 280,6,529,137,1 14,3,468,84,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model159.jpg 10,3,98,94,1 129,7,282,97,1 22,50,212,101,0 120,54,213,168,0 137,54,288,170,0 120,126,288,175,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model160.jpg 37,76,300,217,1 513,190,769,334,1 430,414,671,511,1 70,140,720,333,0 66,139,675,493,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model161.jpg 0,52,350,249,0 215,99,638,251,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model162.jpg 33,95,457,175,0 3,2,185,167,1 309,40,500,161,1
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model163.jpg 1,131,258,318,1 502,28,754,145,1 559,264,829,463,1 65,427,316,533,1 239,14,477,197,2 206,345,673,490,0 499,84,672,410,0 148,86,608,224,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model164.jpg 38,209,317,325,1 488,200,779,345,1 68,416,274,499,1 124,247,259,450,0 132,246,667,289,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model165.jpg 9,36,123,132,1 337,40,464,177,1 18,79,440,142,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model166.jpg 0,143,277,242,1 115,0,252,241,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model167.jpg 0,91,251,201,1 178,0,431,105,1 176,252,429,348,1 82,169,351,302,0 254,74,351,286,0 272,150,427,219,2
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model168.jpg 14,18,237,91,1 15,21,211,191,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model169.jpg 1,119,348,282,0 221,119,643,186,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model170.jpg 13,14,414,246,0 13,161,411,371,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model171.jpg 80,214,709,405,0 134,25,644,406,2
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model172.jpg 9,61,244,410,1 582,32,902,490,1 216,77,622,430,2 27,167,885,322,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model173.jpg 19,1,325,175,1 496,15,769,120,1 506,299,742,417,1 0,294,269,448,1 125,69,268,391,0 128,333,646,400,0 126,63,676,119,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model174.jpg 12,8,258,54,0 182,9,258,174,0 12,7,258,172,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model175.jpg 1,1,101,55,0 42,13,283,72,0 219,30,300,164,0 34,31,110,155,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model177.jpg 34,44,246,100,1 386,43,600,99,1 59,235,360,365,1 37,145,364,198,2 155,40,480,100,0 152,40,249,290,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model178.jpg 34,208,284,353,1 731,1,1024,229,1 239,73,576,264,2 128,84,860,353,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model179.jpg 22,273,555,471,0 78,37,557,343,0 123,25,963,86,0 729,36,959,373,0 14,334,925,596,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model180.jpg 0,103,231,247,1 449,0,696,70,1 503,178,771,409,1 67,373,340,448,1 140,253,676,447,0 450,1,677,331,0 92,0,591,182,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model181.jpg 14,13,447,156,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model182.jpg 0,142,281,240,1 30,0,168,241,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model183.jpg 354,187,655,293,0 353,218,470,465,0 354,3,469,262,0 10,204,466,282,0 9,3,466,266,0 175,204,294,332,2 174,4,464,263,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model184.jpg 1,124,179,296,1 269,6,413,149,1 224,303,478,454,1 100,188,365,354,0 268,95,403,354,0 102,85,354,242,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model185.jpg 0,1,251,128,1 279,2,529,125,1 17,63,468,147,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model186.jpg 1,0,462,91,0 172,0,292,172,2
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model187.jpg 16,257,448,473,1 587,258,930,439,1 391,379,539,588,2 191,375,735,450,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model188.jpg 40,213,314,318,1 68,415,271,499,1 488,204,776,345,1 138,248,662,292,0 119,250,259,444,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model189.jpg 9,7,451,175,3
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model190.jpg 28,79,279,169,1 531,18,788,202,1 531,343,798,442,1 30,297,281,482,1 288,342,528,518,2 174,321,637,439,0 527,98,661,411,0 169,56,637,175,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model191.jpg 0,21,254,336,1 394,166,630,335,1 64,148,554,224,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model192.jpg 1,30,224,162,1 341,29,590,192,1 18,1,582,90,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model193.jpg 7,7,96,95,1 128,7,282,94,1 22,55,213,97,0 122,55,213,167,0 122,126,290,168,0 139,54,291,168,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model194.jpg 2,1001,2745,2234,1 3221,1052,6015,2231,1 1226,1,4665,1632,2 933,980,5105,1644,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model195.jpg 51,32,300,175,1 531,59,660,202,1 350,39,485,205,2 170,41,658,128,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model196.jpg 6,6,180,165,1 314,45,498,161,1 37,98,454,167,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model197.jpg 0,37,221,161,1 343,38,588,191,1 23,4,577,87,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model198.jpg 4,50,116,125,1 339,4,475,79,1 126,133,274,225,1 269,113,452,238,2 26,21,429,91,0 183,50,482,185,0
+../Datos Entrenamiento/Detection_Relations/Train_Detection/images/model199.jpg 9,9,266,125,1 273,12,505,123,1 82,55,441,161,0
